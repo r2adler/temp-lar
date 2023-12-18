@@ -7,6 +7,7 @@ export default function Home() {
       <Typography>Typography</Typography>
       <Button>button</Button>
       <Button variant={"ghost"}>button</Button>
+      <Button variant={"ghost"}>button</Button>
     </main>
   )
 }
