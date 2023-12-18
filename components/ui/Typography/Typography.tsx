@@ -1,13 +1,13 @@
-import { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
+import { ComponentPropsWithoutRef, ElementType, ReactNode } from "react"
 
-import { clsx } from "clsx";
+import { clsx } from "clsx"
 
-import s from "./Typography.module.scss";
+import s from "./Typography.module.scss"
 
 type TypographyProps<T extends ElementType = "span"> = {
-  as?: T;
-  children: ReactNode;
-  className?: string;
+  as?: T
+  children: ReactNode
+  className?: string
   variant?:
     | "body1"
     | "body2"
@@ -16,8 +16,8 @@ type TypographyProps<T extends ElementType = "span"> = {
     | "h2"
     | "h3"
     | "large"
-    | "subtitle1";
-} & ComponentPropsWithoutRef<T>;
+    | "subtitle1"
+} & ComponentPropsWithoutRef<T>
 
 export const Typography = <T extends ElementType = "span">(
   props: TypographyProps<T> &
@@ -28,8 +28,8 @@ export const Typography = <T extends ElementType = "span">(
     className,
     variant = "body1",
     ...rest
-  } = props;
-  const classNames = clsx(s[variant], className);
+  } = props
+  const classNames = clsx(s[variant], className)
 
-  return <Component className={classNames} {...rest} />;
-};
+  return <Component className={classNames} {...rest} />
+}

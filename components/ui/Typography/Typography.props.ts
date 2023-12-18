@@ -1,3 +1,1 @@
-interface Typography {
-
-}
+interface Typography {}
