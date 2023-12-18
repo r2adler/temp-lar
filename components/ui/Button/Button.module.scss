@@ -1,0 +1,86 @@
+@mixin button {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 6px 28px;
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-normal);
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 4px;
+
+  &:disabled {
+    cursor: default;
+  }
+  &.fullWidth {
+    width: 100%;
+  }
+  .icon {
+    path {
+      fill: var(--color-light-100);
+    }
+  }
+}
+
+.primary {
+  @include button;
+  color: var(--color-white);
+  height: 36px;
+  background-color: var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &:focus-visible {
+  }
+
+  &:active {
+  }
+
+  &:disabled {
+    .icon {
+      path {
+        fill: var(--color-light-900);
+      }
+    }
+  }
+}
+
+.ghost {
+  @include button;
+  height: 36px;
+  color: var(--color-black);
+  background: none;
+  border: 1px solid var(--color-gray-light);
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &:focus-visible {
+
+  }
+
+  &:active {
+
+  }
+
+  &:disabled {
+
+  }
+}
