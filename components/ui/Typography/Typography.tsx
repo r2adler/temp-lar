@@ -29,7 +29,7 @@ export const Typography = <T extends ElementType = "span">(
     variant = "body1",
     ...rest
   } = props
-  const classNames = clsx(s[variant], className)
+  const typographyCN = clsx(s[variant], className)
 
-  return <Component className={classNames} {...rest} />
+  return <Component className={typographyCN} {...rest} />
 }

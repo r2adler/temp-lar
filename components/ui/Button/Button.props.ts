@@ -5,4 +5,5 @@ export type ButtonProps<T extends ElementType = "button"> = {
   className?: string
   fullWidth?: boolean
   variant?: "ghost" | "primary"
+  arrow?: "none" | "down" | "right"
 } & ComponentPropsWithoutRef<T>
