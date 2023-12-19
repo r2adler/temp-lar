@@ -16,7 +16,7 @@ type TypographyProps<T extends ElementType = "span"> = {
     | "h2"
     | "h3"
     | "large"
-    | "subtitle1"
+    | "subtitle"
 } & ComponentPropsWithoutRef<T>
 
 export const Typography = <T extends ElementType = "span">(

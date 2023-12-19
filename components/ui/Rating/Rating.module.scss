@@ -1,0 +1,20 @@
+.star svg {
+  margin-right: 5px;
+  fill: var(--color-gray-light);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+  }
+}
+
+.filled svg {
+  fill: var(--color-primary);
+}
+
+.editable {
+  cursor: pointer;
+}
