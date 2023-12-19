@@ -1,3 +1,6 @@
 export * from "./ui/Typography/Typography"
 export * from "./ui/Button/Button"
 export * from "./ui/Rating/Rating"
+export * from "./Sidebar/Sidebar"
+export * from "./Header/Header"
+export * from "./Footer/Footer"

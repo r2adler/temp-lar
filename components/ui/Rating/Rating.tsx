@@ -1,3 +1,4 @@
+"use client"
 import s from "./Rating.module.scss"
 import { RatingProps } from "./Rating.props"
 import { ReactElement, useEffect, useState, KeyboardEvent } from "react"

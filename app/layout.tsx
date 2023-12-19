@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter, Noto_Sans } from "next/font/google"
 import "app/globals.scss"
+import { Footer, Header, Sidebar } from "@/components"
 
 const notoSans = Noto_Sans({
   subsets: ["latin", "cyrillic"],
@@ -20,7 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={notoSans.className}>{children}</body>
+      <body className={notoSans.className}>
+        <Header />
+        <main>
+          <Sidebar />
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
