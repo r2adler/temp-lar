@@ -1,3 +1,8 @@
+* {
+  all: unset;
+  display: revert;
+}
+
 html,
 body {
   margin: 0;
@@ -5,6 +10,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   color: var(--color-black);
   background: var(--color-white);
+  box-sizing: border-box;
 }
 
 a {
@@ -12,9 +18,7 @@ a {
   color: inherit;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 :root {
   --color-black: rgb(0, 0, 0);
@@ -29,7 +33,7 @@ a {
   --font-family: "Noto Sans", sans-serif;
 
   --font-size-s: 14px;
-  --font-size-m: 26px;
+  --font-size-m: 16px;
   --font-size-l: 18px;
   --font-size-xl: 26px;
 

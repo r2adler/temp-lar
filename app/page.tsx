@@ -6,7 +6,7 @@ import { useState } from "react"
 export default function Home() {
   const [r, setR] = useState(0)
   return (
-    <main className={styles.main}>
+    <>
       <Typography as={"h3"} variant={"h3"}>
         Typography
       </Typography>
@@ -19,6 +19,6 @@ export default function Home() {
       </Button>
       <Button arrow={"right"}>button</Button>
       <Rating rating={r} isEditable setRating={setR} />
-    </main>
+    </>
   )
 }
