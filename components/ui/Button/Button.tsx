@@ -2,7 +2,7 @@ import s from "./Button.module.scss"
 import { ButtonProps } from "./Button.props"
 import { ComponentPropsWithoutRef, ElementType } from "react"
 import clsx from "clsx"
-import ArrowIcon from "../../../public/arrow.svg"
+import ArrowIcon from "public/arrowIcon.svg"
 
 export const Button = <T extends ElementType = "button">(
   props: ButtonProps<T> &

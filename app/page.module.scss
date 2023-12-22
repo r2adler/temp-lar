@@ -1,13 +1,14 @@
 .title {
   display: grid;
   grid-template-columns: 1fr auto auto;
-  align-items: center;
+  align-items: end;
 
 
   .titleText {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    margin-top: 15px;
+    margin-top: 7px;
+
   }
 
   .titleNumber {

@@ -1,0 +1,117 @@
+.disabled {
+  path {
+    fill: var(--color-red) !important;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+
+  .label {
+    color: var(--color-dark-100);
+
+    &.disabled {
+      color: var(--color-dark-300);
+    }
+  }
+
+  .error {
+    margin-top: 5px;
+    color: var(--color-danger-300);
+  }
+}
+
+.inputWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  height: 36px;
+  padding: 7px 3px 7px 15px;
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  .searchImg {
+    margin-right: 4px;
+
+    path {
+      fill: var(--color-dark-100);
+    }
+  }
+
+  &:has(.textField:focus-visible) {
+    outline: 1px solid rgba(98, 98, 255, 0.9);
+  }
+
+
+  &.error {
+    outline: 1px solid red;
+  }
+
+  .textField {
+    width: 100%;
+    background: inherit;
+    border: none;
+    outline: none;
+    font-size: var(--font-size-m);
+
+    &::-webkit-search-cancel-button {
+      appearance: none;
+    }
+
+    &::placeholder {
+      color: var(--color-gray);
+    }
+
+
+    &.disabled {
+      cursor: not-allowed;
+      color: var(--color-gray);
+
+      &::placeholder {
+        color: var(--color-gray);
+      }
+    }
+  }
+
+  .searchIconWrapper {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+    .searchIcon {
+      fill: var(--color-white);
+    }
+  }
+
+  .deleteBtn {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+
+    &:focus-visible {
+      outline: 2px solid blue;
+    }
+  }
+
+  .eyeBtn {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+  }
+}

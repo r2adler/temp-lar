@@ -1,7 +1,5 @@
 import { ComponentPropsWithoutRef, ElementType, ReactNode } from "react"
-
 import { clsx } from "clsx"
-
 import s from "./Typography.module.scss"
 
 type TypographyProps<T extends ElementType = "span"> = {

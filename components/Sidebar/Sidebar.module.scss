@@ -1,25 +1,27 @@
-.Sidebar {
-
-}
-
 .title {
   color: var(--color-primary);
-  background-color: orange;
+  display: flex;
+  align-items: start;
+  gap: 6px;
+  margin-bottom: 20px;
+
   .owlIcon {
-    fill {
-      color: #684adc;
-    }
+    fill: var(--color-primary);
   }
 
   .titleOwl {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-bold);
   }
 
   .titleTop {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-light);
   }
-
 }
+
+.textField {
+  margin-bottom: 29px;
+}
+
 

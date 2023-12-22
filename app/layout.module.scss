@@ -7,8 +7,7 @@
     ". header header ."
     ". sidebar body ."
     ". footer footer .";
-  padding: 34px;
-  background-color: var(--bg-color);
+  background-color: var(--color-bg);
 }
 
 .header {
@@ -23,12 +22,14 @@
 
 .sidebar {
   grid-area: sidebar;
-  background-color: orange;
+  padding-top: 34px;
+  padding-left: 34px;
 }
 
 .body {
   grid-area: body;
   background-color: aquamarine;
+  padding-top: 34px;
 }
 
 

@@ -2,7 +2,7 @@
 import s from "./Rating.module.scss"
 import { RatingProps } from "./Rating.props"
 import { ReactElement, useEffect, useState, KeyboardEvent } from "react"
-import StarIcon from "../../../public/star.svg"
+import StarIcon from "public/starIcon.svg"
 import clsx from "clsx"
 
 export const Rating = (props: RatingProps): ReactElement => {
