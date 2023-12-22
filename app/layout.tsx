@@ -2,7 +2,7 @@ import type {Metadata} from 'next'
 import { Noto_Sans} from 'next/font/google'
 import 'app/globals.scss'
 import {Footer, Header, Sidebar} from '@/components'
-import cls from './page.module.scss'
+import cls from './layout.module.scss'
 import {clsx} from 'clsx';
 
 const notoSans = Noto_Sans({

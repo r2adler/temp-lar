@@ -1,52 +1,36 @@
-.wrapper {
+.title {
   display: grid;
-  min-height: 100vh;
-  grid-template-columns: auto 230px minmax(320px, 1200px) auto;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    ". header header ."
-    ". sidebar body ."
-    ". footer footer .";
-  gap: 0 30px;
-}
-
-.header {
-  grid-area: header;
-  display: none;
-  background-color: #7754fd;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  background-color: orange;
-}
-
-.body {
-  grid-area: body;
-  background-color: aquamarine;
-}
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
 
 
-@media (max-width: 765px) {
-  .wrapper {
-    grid-template-columns: minmax(320px, 1fr);
-    grid-template-areas:
-    "header"
-    "body"
-    "footer";
+  .titleText {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-top: 15px;
   }
 
-  .sidebar {
-    display: none;
+  .titleNumber {
+    font-size: var(--font-size-s);
+    margin-left: 19px;
+    color: var(--color-white);
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    width: 37px;
+    align-items: center;
+    background-color: var(--color-gray);
+    border-radius: 25px;
   }
 
-  .header {
-    display: block;
+  .titleRating {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-normal);
+    margin-right: 43px;
+  }
+
+  .titlePrice {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-normal);
   }
 }
-
-

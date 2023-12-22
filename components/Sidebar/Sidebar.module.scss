@@ -1,3 +1,25 @@
 .Sidebar {
 
 }
+
+.title {
+  color: var(--color-primary);
+  background-color: orange;
+  .owlIcon {
+    fill {
+      color: #684adc;
+    }
+  }
+
+  .titleOwl {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .titleTop {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-light);
+  }
+
+}
+

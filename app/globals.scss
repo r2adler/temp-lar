@@ -9,8 +9,7 @@ body {
   padding: 0;
   font-family: "Noto Sans", sans-serif;
   color: var(--color-black);
-  background: var(--color-white);
-  box-sizing: border-box;
+  background-color: var(red);
 }
 
 a {
@@ -21,14 +20,16 @@ a {
 
 
 :root {
+  --bg-color: rgba(245, 246, 248, 1);
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
-  --color-primary: #7754fd;
+  --color-primary: rgba(118, 83, 252, 1);
   --color-primary-hover: #684adc;
   --color-red: rgb(255, 0, 0);
   --color-green: rgb(69, 180, 0);
   --color-green-light: rgb(144, 210, 104);
   --color-gray-light: #ebebeb;
+  --color-gray: rgba(179, 192, 217, 1);
 
   --font-family: "Noto Sans", sans-serif;
 
