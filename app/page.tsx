@@ -1,7 +1,6 @@
 'use client'
 import {Button, Rating, Typography} from '@/components'
 import {useState} from 'react'
-import Menu from '@/components/SSR/Menu/menu';
 import cls from './page.module.scss'
 
 

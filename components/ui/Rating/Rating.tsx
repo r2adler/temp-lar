@@ -59,7 +59,7 @@ export const Rating = (props: RatingProps): ReactElement => {
   }
 
   return (
-    <div {...props}>
+    <div {...rest}>
       {ratingArray.map((r, i) => (
         <span key={i}>{r}</span>
       ))}
